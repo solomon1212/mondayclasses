@@ -1,3 +1,4 @@
+ 
 body {
     color: #343434;
   
@@ -8,6 +9,8 @@ body {
   }
   header {
     background-color: aqua;
+    text-align: center;
+    padding: 1rem;  
   }
   * {
     box-sizing: border-box;
@@ -20,8 +23,9 @@ body {
     display: inline-block;
    background-color: lightcoral;
     flex-direction: column;
+    text-align: center;
     padding: 1.5em 1em;
-    border: 1px solid #eee;
+    border: 1px solid rgb(63, 54, 54);
     border-radius: 0.25em;
   }
 
@@ -31,5 +35,15 @@ body {
     display: grid;
     grid-gap: 20px;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    padding: 0 10px;
+    padding: 2rem 10px;
+}
+  
+
+
+.main {
+  padding: 2rem 10px;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
 }
