@@ -7,12 +7,45 @@ body {
     text-align: left;
     margin: 10;
   }
+
+/* Page content */
+.content {
+  padding: 16px;
+}
+
   header {
-    background-color: aqua;
-    text-align: center;
-    padding: 1rem;  
+    background-color: rgb(236, 85, 92);
+    text-align: left;
+    height:50px; 
+    width:100%; 
   }
-  * {
+  
+  /* Style the navbar */
+#navbar {
+  overflow: hidden;
+  background-color: rgb(185, 171, 171);
+}
+
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+/* Navbar links */
+#navbar a {
+  float: left;
+  display: block;
+  color: rgb(255, 255, 255);
+  text-align: right;
+  padding: 5px;
+  text-decoration: none;
+}
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
+
+  *{
     box-sizing: border-box;
   }
   img {
