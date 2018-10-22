@@ -1,11 +1,11 @@
  
 body {
-    color: #343434;
-  
+    color: #1c1d1d;
+    background-color: #11a8ee;
     font-size: 1rem;
     line-height: 1.5;
     text-align: left;
-    margin: 10;
+    margin: 0;
   }
 
 /* Page content */
@@ -13,8 +13,15 @@ body {
   padding: 16px;
 }
 
+/*
+p span {
+  display: block;
+  text-align: left;
+} 
+*/
+
   header {
-    background-color: rgb(236, 85, 92);
+    background-color: rgb(119, 117, 252);
     text-align: left;
     height:50px; 
     width:100%; 
@@ -23,19 +30,19 @@ body {
   /* Style the navbar */
 #navbar {
   overflow: hidden;
-  background-color: rgb(185, 171, 171);
+  background-color: rgb(113, 206, 223);
 }
 
   .sticky {
     position: fixed;
-    top: 0;
+    top:  0;
     width: 100%;
   }
 /* Navbar links */
 #navbar a {
   float: left;
   display: block;
-  color: rgb(255, 255, 255);
+  color: rgb(25, 34, 37);
   text-align: right;
   padding: 5px;
   text-decoration: none;
@@ -45,6 +52,10 @@ body {
   padding-top: 60px;
 }
 
+h1{
+  margin-left: 30px;
+}
+
   *{
     box-sizing: border-box;
   }
@@ -52,9 +63,19 @@ body {
     width: 100%;
     height: auto;
 }
+
+ section{
+  display: flow-root;
+  background-color: rgb(58, 55, 55);
+   color: aliceblue;
+   /*
+   border: 1px solid rgb(63, 54, 54);
+   border-radius: 0.25em; */
+}
+
   .sport {
     display: inline-block;
-   background-color: lightcoral;
+   background-color: rgb(245, 69, 69);
     flex-direction: column;
     text-align: center;
     padding: 1.5em 1em;
@@ -79,4 +100,19 @@ body {
   grid-gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 
+}
+
+.spa{
+  float:right;
+  margin-right: 100px;
+
+}
+a{
+
+  margin-left: 20px;
+  font: 1.2em sans-serif;
+  padding: 5px;
+}
+a:hover, a:focus {
+  background: rgb(121, 165, 223);
 }
