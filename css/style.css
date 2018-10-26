@@ -1,11 +1,11 @@
  
 body {
     color: #1c1d1d;
-    background-color: #11a8ee;
+    background-color: #e2cdcd;
     font-size: 1rem;
     line-height: 1.5;
     text-align: left;
-    margin: 0;
+    margin: 1px;
   }
 
 /* Page content */
@@ -21,7 +21,7 @@ p span {
 */
 
   header {
-    background-color: rgb(119, 117, 252);
+    background-color: rgb(233, 172, 161);
     text-align: left;
     height:50px; 
     width:100%; 
@@ -30,7 +30,7 @@ p span {
   /* Style the navbar */
 #navbar {
   overflow: hidden;
-  background-color: rgb(113, 206, 223);
+  background-color: #e2cdcd;
 }
 
   .sticky {
@@ -42,7 +42,7 @@ p span {
 #navbar a {
   float: left;
   display: block;
-  color: rgb(25, 34, 37);
+  color: rgb(78, 61, 58);
   text-align: right;
   padding: 5px;
   text-decoration: none;
@@ -62,6 +62,7 @@ h1{
   img {
     width: 100%;
     height: auto;
+    margin: 
 }
 
  section{
@@ -114,5 +115,21 @@ a{
   padding: 5px;
 }
 a:hover, a:focus {
-  background: rgb(121, 165, 223);
+  background: rgb(161, 125, 110);
+}
+p{
+  padding: 25px;
+}
+.mkl{
+  display: flex;
+}
+.footer {
+  position: fixed;
+  color:  rgb(78, 61, 58);
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+  background-color: rgb(233, 172, 161);
+  text-align: center;
 }
