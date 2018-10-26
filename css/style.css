@@ -120,9 +120,19 @@ a:hover, a:focus {
 p{
   padding: 25px;
 }
-.mkl{
-  display: flex;
+ .mkl{
+   float: left;
+ }
+
+.pic {
+  float: left;
+  width: 50%;
+  height: 500px;
+  padding: 5px;
+ 
 }
+/* Clear floats after image containers */
+
 .footer {
   position: fixed;
   color:  rgb(78, 61, 58);
