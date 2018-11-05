@@ -13,12 +13,7 @@ body {
   padding: 16px;
 }
 
-/*
-p span {
-  display: block;
-  text-align: left;
-} 
-*/
+
 
   header {
     background-color: rgb(233, 172, 161);
@@ -41,11 +36,10 @@ p span {
   }
 /* Navbar links */
 #navbar a {
-  float: left;
-  display: block;
+
+  display: inline-block;
   color: rgb(78, 61, 58);
   text-align: right;
-  padding: 5px;
   text-decoration: none;
   position:absolute;
 
@@ -65,19 +59,45 @@ h1{
   *{
     box-sizing: border-box;
   }
+    /*--style menu bar--*/
+  .spa{
+    float:right;
+  }
+  /*--style menu bar--*/
+  .spa>ul {
+    display: inline-block;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 100px;
+    padding-top: 0px;
+  }
+
+  .spa a{
+
+    font: 1.5em sans-serif;
+    display: inline-block;
+    position: absolute;
+    }
+
+     /*--style hover menu bar--*/
+  a:hover, a:focus {
+    background: rgb(161, 125, 110);
+    box-sizing: 30px 30px;
+  }
   img {
     width: 100%;
     height: auto;
-    margin: 
+    margin: 0px;
 }
 
  section{
   display: flow-root;
   background-color: rgb(58, 55, 55);
    color: aliceblue;
-   /*
+   
    border: 1px solid rgb(63, 54, 54);
-   border-radius: 0.25em; */
+   border-radius: 0.5em; 
 }
 
   .sport {
@@ -130,10 +150,15 @@ h1{
       text-decoration: none;
       display: block;
       border-radius: 5px;
+
   }
+
   
   /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: #f0dbdb}
+  .dropdown-content a:hover {
+    background-color: #f0dbdb
+
+  }
   
   /* Show the dropdown menu on hover */
   .dropdown:hover .dropdown-content {
@@ -143,7 +168,7 @@ h1{
   /* Change the background color of the dropdown button when the dropdown content is shown */
   .dropdown:hover .dropbtn {
       background-color: #1ba7e7;
-  }
+        }
  
 
 .main-div {
@@ -163,20 +188,7 @@ h1{
 
 }
 
-.spa{
-  float:right;
-  margin-right: 100px;
 
-}
-a{
-
-  margin-left: 20px;
-  font: 1.2em sans-serif;
-  padding: 5px;
-}
-a:hover, a:focus {
-  background: rgb(161, 125, 110);
-}
 p{
   padding: 25px;
 }
