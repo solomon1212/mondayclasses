@@ -1,4 +1,6 @@
  
+
+ 
 body {
     color: #1c1d1d;
     background-color: #e2cdcd;
@@ -23,7 +25,7 @@ body {
   }
   
   /* Style the navbar */
-#navbar {
+#menubar {
   overflow: hidden;
   background-color: #e2cdcd;
 }
@@ -34,8 +36,8 @@ body {
     width: 100%;
     z-index:500;
   }
-/* Navbar links */
-#navbar a {
+/* menubar links */
+#menubar a {
 
   display: inline-block;
   color: rgb(78, 61, 58);
@@ -44,7 +46,9 @@ body {
   position:absolute;
 
 }
-/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+/* Add some top padding to the page content to prevent 
+sudden quick movement (as the navigation bar gets a new 
+position at the top of the page (position:fixed and top:0) */
 .sticky + .content {
   padding-top: 60px;
 }
@@ -98,7 +102,10 @@ h1 {
 .ade {
   position: relative;
   text-align: center;
-  color: rgb(10, 3, 3);
+  color: rgb(75, 39, 39);
+ background: url('../image/arsenal.jpg ' ) no-repeat center center fixed;
+ height: calc(100vh - 160px);
+ background-size: cover;
 
 }
 .logo {
@@ -107,7 +114,7 @@ h1 {
    left: 110px;
   font-family: cursive;
   font-size: 60px;
-  background-color: white;
+  text-shadow: 3px 3px rgb(196, 56, 56);
   
 }
 
@@ -231,7 +238,7 @@ p{
   vertical-align: top;
   margin-left: -2px;
   max-height: 450px;
-  min-height: 200px;
+  min-height: 450px;
 }
 
 /* Clear floats after image containers */
