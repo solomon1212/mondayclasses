@@ -16,3 +16,4 @@ function myFunction() {
     menubar.classList.remove("sticky");
   }
 }
+
