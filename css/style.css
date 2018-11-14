@@ -1,260 +1,255 @@
  
 
- @-ms-viewport{
-  width: device-width;
-}
+ 
 body {
-    color: #1c1d1d;
-    background-color: #e2cdcd;
-    font-size: 1rem;
-    line-height: 1.5;
-    text-align: left;
-    margin: 1px;
-  }
+  color: #1c1d1d;
+  background-color: #e2cdcd;
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: left;
+  margin: 1px;
+}
 
 /* Page content */
 .content {
-  padding: 16px;
+padding: 16px;
 }
 
 
 
-  header {
-    background-color: rgb(233, 172, 161);
-    text-align: left;
-    height:50px; 
-    width:100%; 
-  }
-  
-  /* Style the navbar */
+header {
+  background-color: rgb(233, 172, 161);
+  text-align: left;
+  height:50px; 
+  width:100%; 
+}
+
+/* Style the navbar */
 #menubar {
-  overflow: hidden;
-  background-color: #e2cdcd;
+overflow: hidden;
+background-color: #e2cdcd;
 }
 
-  .sticky {
-    position: fixed;
-    top:  0;
-    width: 100%;
-    z-index:500;
-  }
+.sticky {
+  position: fixed;
+  top:  0;
+  width: 100%;
+  z-index:500;
+}
 /* menubar links */
 #menubar a {
 
-  display: inline-block;
-  color: rgb(78, 61, 58);
-  text-align: right;
-  text-decoration: none;
-  position:absolute;
+display: inline-block;
+color: rgb(78, 61, 58);
+text-align: right;
+text-decoration: none;
+position:absolute;
 
 }
 /* Add some top padding to the page content to prevent 
 sudden quick movement (as the navigation bar gets a new 
 position at the top of the page (position:fixed and top:0) */
 .sticky + .content {
-  padding-top: 60px;
+padding-top: 60px;
 }
 
 h1 {
-  padding-left: 30px;
-  margin: 0;
-  margin-top: 20px;
+padding-left: 30px;
+margin: 0;
+margin-top: 20px;
 }
- h2{
-  padding-left: 10px;
- }
-  *{
-    box-sizing: border-box;
-  }
-    /*--style menu bar--*/
-  .spa{
-    float:right;
-  }
+h2{
+padding-left: 10px;
+}
+*{
+  box-sizing: border-box;
+}
   /*--style menu bar--*/
-  nav li {
-    display: inline-block;
-    padding-left: 20px;
-    padding-bottom: 10px;
-    margin-left: 20px;
-    margin-right: 100px;
-    padding-top: 0px;
+.spa{
+  float:right;
+}
+/*--style menu bar--*/
+nav li {
+  display: inline-block;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  margin-left: 20px;
+  margin-right: 100px;
+  padding-top: 0px;
+}
+
+nav  a{
+
+  font: 1.5em sans-serif;
+  display: inline-block;
+  position: absolute;
+  padding: 5px 10px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
   }
 
-  nav  a{
-
-    font: 1.5em sans-serif;
-    display: inline-block;
-    position: absolute;
-    padding: 5px 10px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-    }
-
-     /*--style hover menu bar--*/
-  a:hover, a:focus {
-    background: rgb(161, 125, 110);
-    box-sizing: 30px 30px;
-  }
-  img {
-    max-width: 100%;
-    height: auto;
-    margin: 0px;
+   /*--style hover menu bar--*/
+a:hover, a:focus {
+  background: rgb(161, 125, 110);
+  box-sizing: 30px 30px;
 }
 
 .ade {
-  position: relative;
-  text-align: center;
-  color: rgb(75, 39, 39);
- background: url('../image/arsenal.jpg ' ) no-repeat center center fixed;
- height: calc(100vh - 160px);
- background-size: cover;
+position: relative;
+text-align: center;
+color: rgb(75, 39, 39);
+background: url('../image/arsenal.jpg ' ) no-repeat center center fixed;
+height: calc(100vh - 160px);
+background-size: cover;
 
 }
 .logo {
-  position: absolute;
-  bottom: 40px;
-   left: 110px;
-  font-family: cursive;
-  font-size: 60px;
-  text-shadow: 3px 3px rgb(196, 56, 56);
-  
+position: absolute;
+bottom: 40px;
+ left: 110px;
+font-family: cursive;
+font-size: 6vw;
+text-shadow: 3px 3px rgb(196, 56, 56);
+
 }
 
- section{
-  display: flow-root;
-  background-color: rgb(58, 55, 55);
-   color: aliceblue;
-   
-   border: 1px solid rgb(63, 54, 54);
-   border-radius: 0.5em; 
-}
-
-  .sport {
-    display: inline-block;
-   background-color: rgb(66, 85, 85);
-    flex-direction: column;
-    text-align: center;
-    padding: 1.5em 1em;
-    border: 2px solid rgb(116, 200, 233);
-    border-radius: 1em;
-    color: rgb(219, 233, 245);
-  }
-
-
-  /* Style The Dropdown Button */
-  .dropbtn {
-      background-color: rgb(58, 192, 245);
-      color: white;
-      padding: 16px;
-      font-size: 20px;
-      border: none;
-      cursor: pointer;
-      border-radius: 10px;
-      margin-top: 15px;
-  }
-  
-  /* The container <div> - needed to position the dropdown content */
-  .dropdown {
-      position: relative;
-      display: inline-block;
-      margin-left: 50px;
-        border-radius: 10px;
-  }
-  
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
-      display: none;
-      position: absolute;
-      background-color:  rgb(177, 220, 236);
-      min-width: 160px;
-      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-      z-index: 1;
-      
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content a {
-      color: black;
-      padding: 10px 16px;
-      text-decoration: none;
-      display: block;
-      border-radius: 5px;
-
-  }
-
-  
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {
-    background-color: #f0dbdb
-
-  }
-  
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {
-      display: block;
-  }
-  
-  /* Change the background color of the dropdown button when the dropdown content is shown */
-  .dropdown:hover .dropbtn {
-      background-color: #1ba7e7;
-        }
+section{
+display: flow-root;
+background-color: rgb(58, 55, 55);
+ color: aliceblue;
  
+ border: 1px solid rgb(63, 54, 54);
+ border-radius: 0.5em; 
+}
+
+.sport {
+  display: inline-block;
+ background-color: rgb(66, 85, 85);
+  flex-direction: column;
+  text-align: center;
+  padding: 1.5em 1em;
+  border: 2px solid rgb(116, 200, 233);
+  border-radius: 1em;
+  color: rgb(219, 233, 245);
+}
+
+
+/* Style The Dropdown Button */
+.dropbtn {
+    background-color: rgb(58, 192, 245);
+    color: white;
+    padding: 16px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 15px;
+    
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 50px;
+      border-radius: 10px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:  rgb(177, 220, 236);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+    border-radius: 5px;
+
+}
+
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #f0dbdb
+
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #1ba7e7;
+      }
+
 
 .main-div {
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    padding: 2rem 10px;
-}
-  
-
-
-.main {
-  padding: 2rem 10px;
   display: grid;
   grid-gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  padding: 2rem 10px;
+}
+
+
+
+.main {
+padding: 2rem 10px;
+display: grid;
+grid-gap: 20px;
+grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 
 }
 
 
 p{
-  padding: 25px;
+padding: 25px;
 }
- .mkl{
-   float: left;
- }
+.mkl{
+ float: left;
+}
 
 .pic {
-  float: left;
- width: 100%;
-  height: 500px;
-  padding: 5px;
-  
+float: left;
+width: 100%;
+height: 500px;
+padding: 5px;
+
 }
 
 .pic > img { 
-  display: inline-block;
-  width: 50%;
-  padding: 1rem;
-  vertical-align: top;
-  margin-left: -2px;
-  max-height: 450px;
-  min-height: 450px;
+display: inline-block;
+width: 50%;
+padding: 1rem;
+vertical-align: top;
+margin-left: -2px;
+max-height: 450px;
+min-height: 450px;
 }
 
 /* Clear floats after image containers */
 
 footer {
-  position: fixed;
-  color:  rgb(78, 61, 58);
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 40px;
-  background-color: rgb(233, 172, 161);
-  text-align: center;
-  padding-bottom: 1.3cm;
+position: fixed;
+color:  rgb(78, 61, 58);
+left: 0;
+bottom: 0;
+width: 100%;
+height: 40px;
+background-color: rgb(233, 172, 161);
+text-align: center;
+padding-bottom: 1.3cm;
 
 }
