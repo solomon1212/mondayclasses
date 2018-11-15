@@ -217,6 +217,7 @@ grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 p{
 padding: 25px;
 margin-block-end: 100px;
+overflow: auto;
 }
 .mkl{
  float: left;
