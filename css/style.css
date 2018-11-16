@@ -1,6 +1,6 @@
  
 
- 
+ /* main body*/
 body {
   color: #1c1d1d;
   background-color: #e2cdcd;
@@ -8,6 +8,7 @@ body {
   line-height: 1.5;
   text-align: left;
   margin: 1px;
+  overflow: auto;
 }
 
 /* Page content */
@@ -47,8 +48,8 @@ position:absolute;
 
 }
 /* Add some top padding to the page content to prevent 
-sudden quick movement (as the navigation bar gets a new 
-position at the top of the page (position:fixed and top:0) */
+sudden quick movement as the navigation bar gets a new 
+position at the top of the page */
 .sticky + .content {
 padding-top: 60px;
 }
@@ -90,7 +91,7 @@ nav  a{
   }
 
    /*--style hover menu bar--*/
-a:hover, a:focus {
+nav a:hover, a:focus {
   background: rgb(161, 125, 110);
   box-sizing: 30px 30px;
 }
@@ -216,8 +217,7 @@ grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 
 p{
 padding: 25px;
-margin-block-end: 100px;
-overflow: auto;
+margin-block-end: 50px;
 }
 .mkl{
  float: left;
@@ -239,6 +239,39 @@ vertical-align: top;
 margin-left: -2px;
 max-height: 450px;
 min-height: 450px;
+}
+/* social media icons/links */
+
+.social {
+  text-align: center;
+  margin-block-end: 100px;
+  overflow: auto;
+  box-sizing: border-box;
+  }  
+.social li {
+  display:inline-block;
+  list-style-type:none;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  }
+.social li a {
+  border-bottom: none;
+  }
+/* fix later
+  .social a:hover { 
+      -webkit-stroke-color: rgb(214, 76, 76);
+      -webkit-fill-color: rgb(202, 23, 23);
+      box-shadow: 1px 0px 20px rgb(201, 120, 27);
+      transition: all 0.3s ease-in;
+    }
+
+    */
+.social li img {
+  width:40px;
+  height:40px;
+  text-decoration:none;
+  margin-right: 20px;
+  border-radius: 50%;
 }
 
 /* Clear floats after image containers */
