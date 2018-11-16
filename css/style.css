@@ -244,9 +244,9 @@ min-height: 450px;
 
 .social {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
   margin-block-end: 100px;
-  overflow: auto;scale:
+  overflow: auto;
   }  
 .social li {
   display:inline-block;
